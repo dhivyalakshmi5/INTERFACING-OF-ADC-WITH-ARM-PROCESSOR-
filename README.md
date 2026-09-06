@@ -33,13 +33,36 @@ simple example.c, Uart Receiver interrupt.c, lcd.c, lcd.h
  
  
 # PROGRAM:
+```
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
 
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+void setup() {
+  lcd.init();
+  lcd.backlight();
+
+  lcd.setCursor(0, 0);
+  lcd.print("HELLO");
+
+  lcd.setCursor(0, 1);
+  lcd.print("JANI, DIVYA");
+}
+
+void loop() {
+}
+```
 
  
-# RESULTS
+# OUTPUT
+
+<img width="1254" height="974" alt="image" src="https://github.com/user-attachments/assets/9d633986-6ea7-4329-92b1-13747ff0c872" />
 
 
 
+# RESULT
+Thus, the ADC is interfaced with ARM LPC 1768 microprocessor.
 
 
 
