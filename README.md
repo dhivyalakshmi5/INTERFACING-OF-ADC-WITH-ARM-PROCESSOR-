@@ -1,30 +1,51 @@
-# INTERFACING-OF-ADC-WITH-ARM-PROCESSOR
+# Interfacing a 16×2 LCD with Arduino using an I2C Module for Sensor Data Display
 
-# AIM: 
-   To interface and toggle the led with ARM LPC 1768 microprocessor           
-           
-# COMPONENTS REQUIRED:
+## Aim
 
-## Hardware:
-ARM LPC1343 / LPC1768
-LCD module
-## Software:
-Coocox IDE
+To interface a **16×2 LCD display with Arduino using an I2C module** and display sensor data on the LCD.
 
-# PROCEDURE:
-Step 1: Go to start All programs  COIDE.
-Step 2: Give a suitable file name for your project and give the destination folder and then next. Step 3: Go to chip NXP LPC 13XX  LPC1343  Next.
-Step 4: Select the required library file (SYSCON and GPIO) from the repository. Step 5: A new project will be created.
-Step 6: Double click on main.c and type the program.
-Step 7: Add the required library source file to the project (Right click on include Add file to group and
-add the source file).
-Step 8: Build the program using build option.
-Step 9: Flash the program by clicking on download code to flash. Step 10: Interface the required component and note down the output. ADD FILES:
-Repository:
-CMSIS core, CMSIS boot, common header files, SYSCON, GPIO.
+## Objectives
 
-# Source files:
-simple example.c, Uart Receiver interrupt.c, lcd.c, lcd.h
+- To understand the operation of a 16×2 LCD.
+- To interface the LCD with Arduino using an I2C module.
+- To reduce the number of GPIO pins required for LCD communication.
+- To read sensor data using Arduino.
+- To display the sensor readings on the LCD.
+
+## Hardware / Software Tools Required
+
+### Hardware
+
+- Arduino UNO
+- 16×2 LCD Display
+- I2C LCD Module (PCF8574-based)
+- DHT11 Temperature and Humidity Sensor
+- Breadboard
+- Jumper wires
+- USB cable
+
+### Software
+
+- Arduino IDE
+- Arduino C/C++ programming language
+- LiquidCrystal_I2C library
+- DHT sensor library
+
+## Components
+
+### 16×2 LCD
+### I2C Module
+### Circuit Connections
+### I2C Communication
+### Working Principle
+
+1. The DHT11 sensor measures temperature and humidity.
+2. Arduino reads the sensor values through the digital data pin.
+3. The Arduino processes the received sensor data.
+4. The processed values are sent to the LCD through the I2C interface.
+5. The LCD displays the temperature on one line.
+6. The humidity is displayed on the second line.
+7. The readings are periodically updated.
  
 # DIAGRAM:
 
